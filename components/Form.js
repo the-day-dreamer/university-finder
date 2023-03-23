@@ -31,7 +31,7 @@ const Form = () => {
             </div>
             <div className={styles.universityDetail}>
             {data1.map((item1)=>(
-                    <div className={styles.item}><div className={styles.imageBox}><Image src={books} fill objectFit='cover'></Image></div><Link href={item1.web_pages[0]} target = "_blank"><div className={styles.nameBox}>{item1.name}</div></Link></div>
+                    <div className={styles.item} key = {item1.alpha_two_code}><div className={styles.imageBox}><Image src={books} fill objectFit='cover'></Image></div><Link href={item1.web_pages[0]} target = "_blank"><div className={styles.nameBox}>{item1.name}</div></Link></div>
                  ))}
                 
             </div>
