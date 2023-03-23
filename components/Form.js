@@ -7,7 +7,7 @@ import Image from 'next/image';
 import books from '../public/books.webp'
 const Form = () => {
     const [country, setCountry] = useState()
-    const [data1, setData1] = useState()
+    const [data1, setData1] = useState([])
     
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -30,7 +30,7 @@ const Form = () => {
                 </form>
             </div>
             <div className={styles.universityDetail}>
-                 {data1.map((item1)=>(
+            {data1.map((item1)=>(
                     <div className={styles.item}><div className={styles.imageBox}><Image src={books} fill objectFit='cover'></Image></div><Link href={item1.web_pages[0]} target = "_blank"><div className={styles.nameBox}>{item1.name}</div></Link></div>
                  ))}
                 
