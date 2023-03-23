@@ -1,0 +1,11 @@
+.navbar{
+    height: 10vh;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--bodyFont);
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --bodyFont : 'Noto Sans', sans-serif;
+}
+body{
+  background-image: url('../public/booksPhone.webp');
+  background-repeat: 1;
+  background-position: center;
+  background-size: cover;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+  font-family: var(--bodyFont);
+  font-size: 1rem;
+}
