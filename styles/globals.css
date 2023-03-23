@@ -7,7 +7,9 @@
 :root{
   --bodyFont : 'Noto Sans', sans-serif;
 }
-body{
+.main{
+  min-width: 100vw;
+  min-height: 100vh;
   background-image: url('../public/booksPhone.webp');
   background-repeat: 1;
   background-position: center;
